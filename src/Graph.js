@@ -54,12 +54,7 @@ export function Graph(props) {
         }
     }
 
-    // const items = props.data.map((item, idx) => <div className="graph-bar tooltip" style={{ "height": "span(item.amount)" }}>
-    //     <span className="tooltiptext">${item.amount}</span>
-    //     <div>
 
-    //     </div>
-    //     <h6 className="day">{item.day}</h6></div >)
     return (
         <div className="graphdivs"  >
             <div className="chartbar"> <Bar style={{ margin: 0, padding: 10 }} options={options} data={userData} /></div>

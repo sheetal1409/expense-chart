@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { Graph } from './Graph';
 import { data } from "./data"
 
