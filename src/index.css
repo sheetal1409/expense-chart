@@ -198,7 +198,7 @@ main {
  */
 
 
-.borderdiv {
+.line {
   width: 100%;
   border-bottom: 1px solid hsl(28, 10%, 53%)
 }
@@ -212,7 +212,7 @@ main {
   justify-content: space-between;
 }
 
-.subdiv {
+.sub {
   text-align: left;
 }
 
