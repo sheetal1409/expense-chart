@@ -1,25 +1,25 @@
 
 import React from "react"
+import { data } from "./data"
 import { Bar } from "react-chartjs-2"
-import { Chart as ChartJS } from "chart.js/auto"
+import { } from "chart.js/auto"
 
 
 
+export function Graph() {
 
-export function Graph(props) {
-
-    const [userData, setUserData] = React.useState({
-        labels: props.data.map(data => data.day),
+    const chartData = {
+        labels: data.map(data => data.day),
         datasets: [{
             label: "Spending - Last 7 Days",
             fill: false,
-            data: props.data.map(data => data.amount),
+            data: data.map(data => data.amount),
             backgroundColor: " hsl(10, 79%, 65%)",
             border: 'none',
             padding: '10',
         }],
+    }
 
-    })
 
     const options = {
         responsive: false,
@@ -57,7 +57,7 @@ export function Graph(props) {
 
     return (
         <div className="graphdivs"  >
-            <div className="chartbar"> <Bar style={{ margin: 0, padding: 10 }} options={options} data={userData} /></div>
+            <div className="chartbar"> <Bar style={{ margin: 0, padding: 10 }} options={options} data={chartData} /></div>
         </div>
     )
 }
